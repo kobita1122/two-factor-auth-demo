@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Two-Factor Authentication Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="step1">
+  <h2>Login</h2>
+  <input placeholder="Username">
+  <input type="password" placeholder="Password">
+  <button onclick="next()">Login</button>
+</div>
+
+<div id="step2" style="display:none;">
+  <h2>Two-Factor Authentication</h2>
+  <p>Enter verification code: <strong>123456</strong></p>
+  <input id="code" placeholder="6-digit code">
+  <button onclick="verify()">Verify</button>
+  <p id="msg"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
